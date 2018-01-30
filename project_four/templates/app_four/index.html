@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "app_four/base.html" %}
+  {% load my_pipes %}
+  {% block body_block %}
+
+    <h1>Home</h1>
+    <hr>
+    <p>{{ text|cut:'hell' }}</p>
+    <p>{{ number|add:"3" }}</p>
+
+  {% endblock %}
